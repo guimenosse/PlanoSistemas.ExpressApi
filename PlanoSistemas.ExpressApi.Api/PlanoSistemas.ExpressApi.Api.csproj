@@ -46,6 +46,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
@@ -177,6 +183,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\EmitentesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -252,6 +259,28 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PlanoSistemas.Comum.Repositorios.Entity\PlanoSistemas.Comum.Repositorios.Entity.csproj">
+      <Project>{dacb9804-b20c-4e5e-ab95-8c29cd1ce74c}</Project>
+      <Name>PlanoSistemas.Comum.Repositorios.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlanoSistemas.Comum.Repositorios.Interfaces\PlanoSistemas.Comum.Repositorios.Interfaces.csproj">
+      <Project>{e5b34bea-7533-4762-989f-76de5235f6d0}</Project>
+      <Name>PlanoSistemas.Comum.Repositorios.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlanoSistemas.ExpressApi.AcessoDados.Entity\PlanoSistemas.ExpressApi.AcessoDados.Entity.csproj">
+      <Project>{992e126f-9d7b-4a90-80c4-2a585d55c8a7}</Project>
+      <Name>PlanoSistemas.ExpressApi.AcessoDados.Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlanoSistemas.ExpressApi.Dominio\PlanoSistemas.ExpressApi.Dominio.csproj">
+      <Project>{d8b58cf0-8cac-43d4-9133-c6425a558ec4}</Project>
+      <Name>PlanoSistemas.ExpressApi.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlanoSistemas.ExpressApi.Repositorios.Entity\PlanoSistemas.ExpressApi.Repositorios.Entity.csproj">
+      <Project>{1da131b9-9d34-4123-808c-34d4ff16fda9}</Project>
+      <Name>PlanoSistemas.ExpressApi.Repositorios.Entity</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

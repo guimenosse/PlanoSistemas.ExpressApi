@@ -5,6 +5,18 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanoSistemas.ExpressApi.Api", "PlanoSistemas.ExpressApi.Api\PlanoSistemas.ExpressApi.Api.csproj", "{F196AC30-FCBE-423B-BA85-985DCD10F530}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanoSistemas.ExpressApi.Dominio", "PlanoSistemas.ExpressApi.Dominio\PlanoSistemas.ExpressApi.Dominio.csproj", "{D8B58CF0-8CAC-43D4-9133-C6425A558EC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanoSistemas.ExpressApi.AcessoDados.Entity", "PlanoSistemas.ExpressApi.AcessoDados.Entity\PlanoSistemas.ExpressApi.AcessoDados.Entity.csproj", "{992E126F-9D7B-4A90-80C4-2A585D55C8A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comum", "Comum", "{9C2DC09C-E70B-44A0-9D00-359AFD5A43E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanoSistemas.Comum.Repositorios.Interfaces", "PlanoSistemas.Comum.Repositorios.Interfaces\PlanoSistemas.Comum.Repositorios.Interfaces.csproj", "{E5B34BEA-7533-4762-989F-76DE5235F6D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanoSistemas.Comum.Repositorios.Entity", "PlanoSistemas.Comum.Repositorios.Entity\PlanoSistemas.Comum.Repositorios.Entity.csproj", "{DACB9804-B20C-4E5E-AB95-8C29CD1CE74C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlanoSistemas.ExpressApi.Repositorios.Entity", "PlanoSistemas.ExpressApi.Repositorios.Entity\PlanoSistemas.ExpressApi.Repositorios.Entity.csproj", "{1DA131B9-9D34-4123-808C-34D4FF16FDA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +27,33 @@ Global
 		{F196AC30-FCBE-423B-BA85-985DCD10F530}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F196AC30-FCBE-423B-BA85-985DCD10F530}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F196AC30-FCBE-423B-BA85-985DCD10F530}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8B58CF0-8CAC-43D4-9133-C6425A558EC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8B58CF0-8CAC-43D4-9133-C6425A558EC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8B58CF0-8CAC-43D4-9133-C6425A558EC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8B58CF0-8CAC-43D4-9133-C6425A558EC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{992E126F-9D7B-4A90-80C4-2A585D55C8A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{992E126F-9D7B-4A90-80C4-2A585D55C8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{992E126F-9D7B-4A90-80C4-2A585D55C8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{992E126F-9D7B-4A90-80C4-2A585D55C8A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5B34BEA-7533-4762-989F-76DE5235F6D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5B34BEA-7533-4762-989F-76DE5235F6D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5B34BEA-7533-4762-989F-76DE5235F6D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5B34BEA-7533-4762-989F-76DE5235F6D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DACB9804-B20C-4E5E-AB95-8C29CD1CE74C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DACB9804-B20C-4E5E-AB95-8C29CD1CE74C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DACB9804-B20C-4E5E-AB95-8C29CD1CE74C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DACB9804-B20C-4E5E-AB95-8C29CD1CE74C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DA131B9-9D34-4123-808C-34D4FF16FDA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DA131B9-9D34-4123-808C-34D4FF16FDA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DA131B9-9D34-4123-808C-34D4FF16FDA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DA131B9-9D34-4123-808C-34D4FF16FDA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E5B34BEA-7533-4762-989F-76DE5235F6D0} = {9C2DC09C-E70B-44A0-9D00-359AFD5A43E4}
+		{DACB9804-B20C-4E5E-AB95-8C29CD1CE74C} = {9C2DC09C-E70B-44A0-9D00-359AFD5A43E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {92B5F088-C839-432C-A7A1-6534E26D672B}
