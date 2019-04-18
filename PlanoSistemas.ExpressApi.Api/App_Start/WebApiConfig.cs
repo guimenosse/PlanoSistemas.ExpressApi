@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Serialization;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
@@ -10,7 +11,12 @@ namespace PlanoSistemas.ExpressApi.Api
         public static void Register(HttpConfiguration config)
         {
             // Serviços e configuração da API da Web
-
+            var jsonFormater = config.Formatters.JsonFormatter;
+            jsonFormater.SerializerSettings = new Newtonsoft.Json.JsonSerializerSettings
+            {
+                ContractResolver = new CamelCasePropertyNamesContractResolver(),
+                NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore
+            };
             // Rotas da API da Web
             config.MapHttpAttributeRoutes();
 
